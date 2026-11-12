@@ -67,7 +67,7 @@ function Contact() {
           <div className="space-y-2">
             <Label htmlFor="message">Message</Label>
             <Textarea id="message" name="message" rows={5} maxLength={1000} placeholder="Lorem ipsum..." />
-            {errors.message && <p className="text-sm text-destructive">{errors.message}</p>}
+            {errors["message"] && <p className="text-sm text-destructive">{errors["message"]}</p>}
           </div>
           <Button type="submit">Send message</Button>
         </form>
